@@ -17,7 +17,23 @@ public class MainActivity extends ActionBarActivity {
     TextView mNumView;
     Stack<BigDecimal> mStack;
     boolean mPopReady = true;
+    boolean mNewNum;
+
+    public  static  final String DIVISION_BY_ZERO = "Division by Zero error";
+    public  static  final  int MAX_DIGITS_ALLOWED = 20;
+    public  static  final  int ROUNDING_PLACES = 20;
+    public  static  final  String MAX_DIGITS_MESSAGE = "max no of digits("+ MAX_DIGITS_ALLOWED+") excerded";
+    public  static  final  String OVERFLOW_ERROR = "overflow";
+    public  static  final  String LARGEST_NUMBER = "99999999999999999999";
+    public  static  final  String SMALLEST_STRING = "-99999999999999999999";
+
+    BigDecimal mLagestNumber;
+    BigDecimal mSmallestNumber;
+
     
+
+
+
 
 
     @Override
