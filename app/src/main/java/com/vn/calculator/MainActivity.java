@@ -4,9 +4,21 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import java.math.BigDecimal;
+import java.util.Stack;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    public static final  String TAG = MainActivity.class.getSimpleName();
+
+    TextView mNumView;
+    Stack<BigDecimal> mStack;
+    boolean mPopReady = true;
+    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
